@@ -42,8 +42,9 @@ g:keyinput_delayer_delay_time                  *g:keyinput_delayer_delay_time*
     ディレイする時間を設定します。
     有効な値は `:h sleep` でご確認ください。
 
-    設定例:
+    設定例: >
 	let g:keyinput_delayer_delay_time = 500ms
+<
 
 
 ==============================================================================
