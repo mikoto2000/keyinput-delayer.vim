@@ -30,6 +30,15 @@ command! ToggleGolfTraining call keyinput_delayer#ToggleKeyInputDelay()
 let g:keyinput_delayer_delay_time = "500m"
 ```
 
+
+# 類似プラグイン
+
+もっとストイックに鍛えたい場合は、以下のプラグインをお試しください。
+
+- [takac/vim-hardtime: Plugin to help you stop repeating the basic movement keys](https://github.com/takac/vim-hardtime)
+- [m4xshen/hardtime.nvim: Establish good command workflow and quit bad habit](https://github.com/m4xshen/hardtime.nvim)
+
+
 # License:
 
 Copyright (C) 2024 mikoto2000
