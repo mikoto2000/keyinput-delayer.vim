@@ -27,7 +27,7 @@ command! ToggleGolfTraining call keyinput_delayer#ToggleKeyInputDelay()
 設定例:
 
 ```vim
-let g:keyinput_delayer_delay_time = 500ms
+let g:keyinput_delayer_delay_time = 500m
 ```
 
 # License:
