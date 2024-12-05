@@ -1,0 +1,75 @@
+*keyinput-delayer.txt* キーインプットを遅延させるプラグイン
+
+目次                                           *keyinput-delayer-contents*
+
+概要                                           |INTRODUCTION|
+使い方                                         |USEAGE|
+コンフィギュレーション                         |CONFIGURATION|
+ライセンス                                     |LICENSE|
+
+==============================================================================
+概要                                           *keyinput-delayer-introduction*
+
+キーインプットを遅延させるプラグインです。
+
+帯域の細い環境で SSH をするような使い心地を提供します。
+
+そのような環境では、「より少ないキータイプで編集を済ませる」という意識が
+高くなるため、 Vim の編集力を高めるためにも利用できます。
+
+
+==============================================================================
+使い方                                         *keyinput-delayer-useage*
+
+`keyinput_delayer#ToggleKeyInputDelay()` を、お好みのコマンド、または
+キーマッピングに指定してください。
+
+設定例 : >
+    command! ToggleGolfTraining call keyinput_delayer#ToggleKeyInputDelay()
+<
+
+`keyinput_delayer#ToggleKeyInputDelay()`
+を呼ぶと、遅延のあり・なしがきりかわります。
+
+
+==============================================================================
+コンフィギュレーション                         *keyinput-delayer-configuration*
+
+g:keyinput_delayer_delay_time                  *g:keyinput_delayer_delay_time*
+    Type: |String|
+    Default: `1000m`
+
+    ディレイする時間を設定します。
+    有効な値は `:h sleep` でご確認ください。
+
+    設定例:
+	let g:keyinput_delayer_delay_time = 500ms
+
+
+==============================================================================
+ライセンス                                     *keyinput-delayer-license*
+
+The MIT License (MIT)
+
+Copyright (c) 2024 mikoto2000
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+vim:tw=78:ts=8:ft=help:norl:noet:fen:fdl=0:
+
